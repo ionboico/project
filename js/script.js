@@ -1,4 +1,4 @@
-// "use sctrict";
+"use sctrict";
 
 /*let number = 4.6;
 
