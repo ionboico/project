@@ -1,5 +1,5 @@
 "use sctrict";
-
+// simple comment
 /*let number = 4.6;
 
 const obj = {
