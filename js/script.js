@@ -1,57 +1,25 @@
 "use sctrict";
-// simple comment
-/*let number = 4.6;
 
-const obj = {
-    name: "John",
-    age: 25,
-    isMarried: false
+// 1.
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
+
+
+// 2
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-console.log(obj.name);
-// console.log(obj["name"]);
+// 3
+const lastFilm1 = prompt('Один из последних просмотренных фильмов?',''),
+    filmEval1 = prompt('На сколько оцените его?',''),
+    lastFilm2 = prompt('Один из последних просмотренных фильмов?',''),
+    filmEval2 = prompt('На сколько оцените его?','');
 
-let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
-console.log(arr[4]);*/
+personalMovieDB.movies[lastFilm1] = filmEval1;
+personalMovieDB.movies[lastFilm2] = filmEval2;
 
-// alert('Hello');
-
-// const result = confirm("Are you here?");
-// console.log(result);
-
-// const answer = prompt("Are you 18?", "18");
-// console.log(typeof(answer));
-
-// const answers = [];
-
-// answers[0] = prompt('What is your firstname?', '');
-// answers[1] = prompt('What is your lastname?', '');
-// answers[2] = prompt('How old are you?', '');
-
-// document.write(answers);
-
-// const category = 'toys';
-
-// console.log(`https://someurl.com/${category}/5`);
-
-// const user = 'Ivan';
-
-// alert(`Hello, ${user}`);
-
-// let incr = 10,
-//     decr = 10;
-
-// // ++incr;
-// // --decr;
-
-// console.log(++incr);
-// console.log(--decr);
-
-// console.log(2*4 === 8);
-
-// const isChecked = false,
-//       isClosed = false;
-
-// // console.log(isChecked && isClosed);
-// console.log(isChecked || isClosed);
-
+console.log(personalMovieDB);
